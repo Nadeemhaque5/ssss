@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Info | Saveitbro Credit Card Generator</title>
+  <meta name="description" content="API usage for Saveitbro Credit Card Generator. Free, fast, and private. No real data.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    pre, code { background: #f1f5f9; color: #222; border-radius: 0.5em; padding: 0.3em 0.7em; font-size: 1em; }
+  </style>
+</head>
+<body>
+  <header class="openai-header">
+    <nav role="navigation" aria-label="Main navigation" class="openai-nav">
+      <a href="generator.html">Card Generator</a>
+      <a href="validator.html">Luhn Validator</a>
+      <a href="bin-lookup.html">BIN Lookup</a>
+      <a href="api.html" aria-current="page">API Info</a>
+      <a href="faq.html">FAQ</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </header>
+  <main>
+    <section class="openai-hero">
+      <img src="assets/credit-card-premium.webp" alt="Saveitbro Logo" class="openai-logo" loading="lazy">
+      <div class="openai-badge">PREMIUM</div>
+      <h1 class="openai-title">API Info</h1>
+      <div class="openai-desc">Integrate Saveitbro tools into your workflow. Free, fast, and private. No real data. No backend.</div>
+    </section>
+    <section class="openai-card">
+      <h2 style="font-size:1.3em;font-weight:700;margin-bottom:1em;">API Endpoints</h2>
+      <p>Use our static JS utilities in your own projects. No backend API is provided, but you can use the following JS functions:</p>
+      <pre><code>// generator.js
+Saveitbro.generateCard({ type: 'visa', bin: '411111', ... });
+// validator.js
+Saveitbro.validateLuhn('4111111111111111');
+// bin-lookup.js
+Saveitbro.lookupBIN('411111');</code></pre>
+      <p>See <a href="faq.html">FAQ</a> for more info.</p>
+    </section>
+  </main>
+  <footer class="openai-footer">
+    <p>&copy; 2025 Saveitbro Credit Card Generator. For educational and testing use only. No real card data is processed or stored.</p>
+  </footer>
+</body>
+</html>

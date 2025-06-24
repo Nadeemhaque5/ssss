@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Disclaimer | Saveitbro Credit Card Generator</title>
+  <meta name="description" content="Disclaimer: Saveitbro Credit Card Generator is for educational and testing use only. No real card data is processed or stored.">
+  <meta name="keywords" content="disclaimer, saveitbro, credit card generator, legal, testing, developer tools, minimal UI">
+  <meta name="author" content="Saveitbro">
+  <meta property="og:title" content="Disclaimer | Saveitbro Credit Card Generator">
+  <meta property="og:description" content="Disclaimer: Saveitbro Credit Card Generator is for educational and testing use only. No real card data is processed or stored.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saveitbro.com/disclaimer.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Disclaimer | Saveitbro Credit Card Generator">
+  <meta name="twitter:description" content="Disclaimer: Saveitbro Credit Card Generator is for educational and testing use only. No real card data is processed or stored.">
+  <meta name="twitter:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <style>
+    html { font-size: 16px !important; }
+    body {
+      font-family: 'Inter', Arial, sans-serif !important;
+      font-size: 1rem !important;
+      background: #fff;
+      color: #111;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-header {
+      background: #111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      height: 56px;
+      padding: 0 1.5rem;
+      border-bottom: 2px solid #222;
+      font-size: 1rem;
+    }
+    .main-logo {
+      height: 49px;
+      width: 49px;
+      margin-right: 1.1rem;
+      border-radius: 6px;
+      background: #fff;
+      object-fit: contain;
+      border: none;
+    }
+    .main-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #fff;
+      margin: 0 2rem 0 0;
+    }
+    .main-nav {
+      display: flex;
+      gap: 1.1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-left: auto;
+    }
+    .main-nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.2rem 0.7rem;
+      border-bottom: 2px solid transparent;
+      transition: border 0.18s, color 0.18s;
+      font-size: 1rem;
+    }
+    .main-nav a[aria-current="page"], .main-nav a:hover {
+      border-bottom: 2px solid #fff;
+      color: #fff;
+    }
+    .main-content {
+      max-width: 700px;
+      margin: 2.5rem auto 0 auto;
+      padding: 0 1.2rem;
+      flex: 1 0 auto;
+      font-size: 1rem;
+    }
+    .main-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: #111;
+      border-left: 4px solid #111;
+      padding-left: 0.7rem;
+    }
+    .main-content .desc {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 2.2rem;
+    }
+    .main-content h2 {
+      font-size: 1.13rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+    .main-content p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .main-content .disclaimer-title {
+      font-weight:700; font-size:1.2em; margin-bottom:1em;
+    }
+    .main-content .disclaimer-text {
+      color:#222;
+    }
+    .main-content form label {
+      display: block;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .main-content input[type="text"],
+    .main-content input[type="number"],
+    .main-content select,
+    .main-content textarea {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1.5px solid #bbb;
+      border-radius: 0.6rem;
+      font-size: 1.08rem;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fafbfc;
+      color: #111;
+      margin-top: 0.3rem;
+      margin-bottom: 0.2rem;
+      transition: border 0.18s, box-shadow 0.18s;
+      box-sizing: border-box;
+    }
+    .main-content input[type="text"]:focus,
+    .main-content input[type="number"]:focus,
+    .main-content select:focus,
+    .main-content textarea:focus {
+      border-color: #111;
+      outline: none;
+      box-shadow: 0 0 0 2px #1111;
+    }
+    .main-content button[type="submit"],
+    .main-content button {
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 0.6rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1.08rem;
+      font-family: 'Inter', Arial, sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 1px 4px 0 #0001;
+    }
+    .main-content button[type="submit"]:hover,
+    .main-content button:hover {
+      background: #222;
+      color: #fff;
+      box-shadow: 0 2px 8px 0 #0002;
+    }
+    .checkbox-group {
+      display: flex;
+      gap: 1.2rem;
+      margin: 1rem 0 0.5rem 0;
+    }
+    .checkbox-group label {
+      font-weight: 400;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+    }
+    .main-footer {
+      text-align: center;
+      margin: 3rem 0 1.5rem 0;
+      color: #888;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+      flex-shrink: 0;
+    }
+    @media (max-width: 700px) {
+      html { font-size: 15px; }
+      .main-content { padding: 1.2rem 0.5rem; }
+      .main-header { padding: 0 0.5rem; }
+      .main-title { font-size: 1.05rem; margin-right: 1rem; }
+      .main-nav { gap: 0.7rem; font-size: 0.98rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <a href="index.html" title="Saveitbro Home"><img src="assets/logo.png" alt="Saveitbro Logo" class="main-logo" loading="lazy"></a>
+    <span class="main-title">Saveitbro Credit Card Generator</span>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="generator.html">Card Generator</a>
+      <a href="validator.html">Luhn Validator</a>
+      <a href="bin-lookup.html">BIN Lookup</a>
+      <a href="faq.html">FAQ</a>
+      <a href="disclaimer.html" aria-current="page">Disclaimer</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </header>
+  <main class="main-content">
+    <h1>Disclaimer</h1>
+    <div class="desc">Legal and ethical use only. No real card data. For testing and education.</div>
+    <div class="disclaimer-title">Disclaimer</div>
+    <div class="disclaimer-text">
+      <p>This site is for educational and testing purposes only. No real card data is processed, stored, or generated. Do not use these numbers for fraudulent or illegal activity. Use responsibly and ethically.</p>
+      <p>Saveitbro Credit Card Generator is not affiliated with any bank, card network, or financial institution.</p>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <p>&copy; 2025 Saveitbro Credit Card Generator. For educational and testing use only. No real card data is processed or stored.</p>
+  </footer>
+</body>
+</html>
