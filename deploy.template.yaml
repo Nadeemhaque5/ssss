@@ -1,0 +1,13 @@
+spec:
+  name: saveitbro-creditcard-static
+  services:
+    - name: web
+      github:
+        branch: main
+        deploy_on_push: true
+      static_sites:
+        - build_command: ""
+          output_dir: "."
+          routes:
+            - path: /
+              preserve_path: true
